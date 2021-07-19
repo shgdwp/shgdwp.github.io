@@ -1,6 +1,6 @@
 .ap1{
     background: rgb(255, 255, 255);
-     height: 165px;
+     height: 155px;
     /*IMPORTANTE*/
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
     align-items: center;
 }
 #cont{
-    padding: 5em;
+    padding: 3em;
     padding-left: 3em;
     
 }
