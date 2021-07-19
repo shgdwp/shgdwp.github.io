@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Autenticación</title>
+    <title>Chat</title>
     <link rel="stylesheet" href="estilos.css">
-
-   <!-- Carga el núcleo de Firebase JS SDK -->
+    <!-- Carga el núcleo de Firebase JS SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
     <!-- Agrega el manejo de autenticación. -->
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js">
+    </script>
+     <!-- Agrego la parte de base de datos con firestore -->
+    <script
+    src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js">
     </script>
     <script src="js/init.js"></script>
   </head>
@@ -28,6 +31,9 @@
     <button type="button" onclick="terminaSesión()">Terminar Sesión</button>
     <footer>Copyright &copy; 2021 Ricardo Armando Machorro Reyes.</footer>
     <script>
+       // @ts-check
+      /** Nombre de usuario atenticado por Firebase. */
+      let usuario = "";
       //@ts-check
       /** Conexión al sistema de autenticación de Firebase. */
       // @ts-ignore
