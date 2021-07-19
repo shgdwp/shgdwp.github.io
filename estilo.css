@@ -1,6 +1,6 @@
 .ap1{
     background: rgb(255, 255, 255);
-     height: 145px;
+     height: 140px;
     /*IMPORTANTE*/
     display: flex;
     align-items: center;
@@ -44,7 +44,7 @@
     color: #ffffff;
 }
 .texto2{
-    font-weight: 80;
+    font-weight: 180;
     font-size: 16px;
     color: #1d1d1d;
 }
