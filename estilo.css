@@ -1,6 +1,6 @@
 .ap1{
     background: rgb(255, 255, 255);
-     height: 200px;
+     height: 165px;
     /*IMPORTANTE*/
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
   .titulo{
     color:rgb(199, 7, 0); 
     font-family: Candara; 
-    font-size: 290%;    
+    font-size: 340%;    
     font-weight: bolder;
     display: flex;
     align-items: center;
