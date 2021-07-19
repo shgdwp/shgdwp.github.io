@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chat</title>
+    <title>Autenticación</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="estilo.css">
-    <!-- Carga el núcleo de Firebase JS SDK -->
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+   <!-- Carga el núcleo de Firebase JS SDK -->
+   <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
     <!-- Agrega el manejo de autenticación. -->
-    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js">
-    </script>
-     <!-- Agrego la parte de base de datos con firestore -->
-    <script
-    src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js">
-    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
     <script src="js/init.js"></script>
   </head>
-  <body>
-    <h1>Autenticación</h1>
-    <h1>Sesión</h1>
-    <fieldset>
-      <legend>Email</legend>
-      <output id="email"><progress max="100">Cargando…</progress></output>
-    </fieldset>
-    <fieldset>
-      <legend>Nombre</legend>
-      <output id="nombre"></output>
-    </fieldset>
-    <figure><img id="avatar" alt="Avatar"></figure>
-    <button type="button" onclick="terminaSesión()">Terminar Sesión</button>
-    <footer>Copyright &copy; 2021 Ricardo Armando Machorro Reyes.</footer>
+  <body class="custom-background" style="background: rgb(255, 49, 49);";>
+    <div class="ap1">
+        <div class="ap2">
+            <p class="titulo">Autenticación</p>             
+        </div>
+    </div>
+    
+    <div id="cont">
+        <h1 style="color: white;">Sesión</h1>
+        <figure><img id="avatar" alt="Avatar"></figure>
+        <fieldset>
+            <legend class="texto">Email</legend>
+            <output id="email"><progress max="100">Cargando…</progress></output> 
+        </fieldset>
+        <fieldset>
+            <legend class="texto">Nombre</legend>
+            <output id="nombre"></output>
+        </fieldset>
+        <button class="boton1" type="button" onclick="terminaSesión()">Terminar Sesión</button>
+        <footer style="font-size: 16px;
+        color: #ffffff;" id="cont">Copyright &copy; 2021 SHG</footer>
+    </div>
     <script>
        // @ts-check
       /** Nombre de usuario atenticado por Firebase. */
